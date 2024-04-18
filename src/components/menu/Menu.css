@@ -1,0 +1,102 @@
+*{
+    background: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+
+}
+.menu_container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin:  1rem 2rem;
+   
+    
+}
+.menu_text{
+    width: 100%;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+.menu_text h1{
+    font-size: var(--big-font);
+    color: var(--color-text);
+
+}
+.menu_text h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 1rem;
+    color: #fff;
+}
+.menuButton{
+  display: inline-block;
+  background: var(--color-text);
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin-top: 1rem;
+
+}
+.menuButton a{
+    text-decoration: none;
+}
+.menuButton:hover{
+    background: #ffa400;
+}
+.menu_gallery{
+  --g: 8px;   /* the gap */
+  --s: 550px; /* the size */
+
+  display: grid;
+  border-radius: 50%;
+  margin-left: 2rem;
+  width: 100%;
+  margin-top: 4rem;
+
+}
+.menu_gallery>img{
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translate(var(--_x,0),var(--_y,0));
+  cursor: pointer;
+  font-size: 0;
+  z-index: 0;
+  transition: .3s, z-index 0s .3s;
+
+}
+.menu_gallery img:hover {
+    font-size: var(--s);
+    z-index: 1;
+    transition: transform .2s, font-size .3s .2s, z-index 0s;
+  }
+  .menu_gallery:hover img {
+    transform: translate(0,0);
+  }
+  .menu_gallery > img:nth-child(1) {
+    clip-path: polygon(50% 50%,.5em 1.2em,0 1em,0 0,100% 0,100% 1em,calc(100% - .5em) 1.2em);
+    --_y: calc(-1*var(--g))
+  }
+  .menu_gallery > img:nth-child(2) {
+    clip-path: polygon(50% 50%,calc(100% - 1.2em) 0.5em,calc(100% - 1em) 0,100% 0,100% 100%,calc(100% - 1em) 100%,calc(100% - 1.2em) calc(100% - .5em));
+    --_x: var(--g)
+  }
+  .menu_gallery > img:nth-child(3) {
+    clip-path: polygon(50% 50%,calc(100% - .5em) calc(100% - 1.2em),100% calc(100% - 1.2em),100% 100%,0 100%,0 calc(100% - 1em),.5em calc(100% - 1.2em));
+    --_y: var(--g)
+  }
+  .menu_gallery > img:nth-child(4) {
+    clip-path: polygon(50% 50%,1.2em .5em,1em 0,0 0,0 100%,1em 100%,1.2em calc(100% - .5em));
+    --_x: calc(-1*var(--g))
+  }
+  

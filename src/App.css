@@ -1,0 +1,12 @@
+.headerStyle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+
+}
+.navItems{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}

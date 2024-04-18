@@ -1,0 +1,51 @@
+.footerStyle{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+    margin-top: 5rem;
+    width: 94%;
+    margin-left:3rem;
+    padding: 30px 30px;
+    
+}
+.contact_box h3,span{
+    margin-bottom: 1rem;
+    color: white;
+
+}
+.social{
+   display: flex;
+   margin-top: 1.5rem;
+
+}
+.social i{
+    font-size: 20px;
+  margin-right: 1rem;
+  color: white;
+
+}
+.social i:hover{
+    color: var(--color-text);
+}
+.contact_box li a{
+    color: white;
+}
+.contact_box li a:hover{
+    color: var(--color-text);
+}
+.contact_box_address{
+    display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+.contact_box_address i{
+    margin-bottom: 0.5rem;
+  font-size: 1rem;
+
+}
+.contact_box_address span{
+    margin-left: 1rem;
+}
+
+  

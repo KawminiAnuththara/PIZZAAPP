@@ -1,0 +1,21 @@
+.connect_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+    width: 99%;
+    margin-left: 1rem;
+    padding: 30px 30px;
+    box-shadow: 10px -6px 54px 2px rgba(244,203,41,0.71);
+-webkit-box-shadow: 10px -6px 54px 2px rgba(244,203,41,0.71);
+-moz-box-shadow: 10px -6px 54px 2px rgba(244,203,41,0.71);
+}
+.connect_text span {
+    color: var(--color-text);
+    font-weight: 500;
+}
+.connect_text h2 {
+    font-size: var(--h2-font);
+    color: white;
+}
+  

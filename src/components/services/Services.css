@@ -1,0 +1,18 @@
+.services_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    color: white;
+    
+   
+}
+.service_box{
+    text-align: center;
+}
+.service_box img{
+    width: 60px;
+}
+.service_box h3{
+    margin: 4px 0 10px;
+}
